@@ -1,0 +1,209 @@
+ul, li, ol {
+	list-style: none;
+	margin-bottom: 0;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: #000;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.8;
+}
+
+a {
+	color: #fff;
+	text-decoration: none !important;
+	outline: none !important;
+	transition: all .3s ease-in-out;
+}
+
+.pc-layout {
+	position: relative;
+	overflow: hidden;
+	max-width: 1360px;
+	padding: 0 40px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.rows {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+
+/* ********************All Page********************  */
+.pages-title-cate {
+	padding: 250px 0 150px;
+	background: url(../img/img-phu-kien.jpg);
+	background-attachment: fixed;
+	background-position: 0 0;
+	position: relative;
+}
+
+.pages-title .pc-layout {
+	position: relative;
+	z-index: 2;
+}
+
+.pages-title::before {
+	background: #010101;
+	content: '';
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	opacity: .8;
+}
+
+.pages-title h1 {
+	font-size: 38px;
+	color: #fff;
+	font-family: 'Rubik', sans-serif;
+	padding: 0;
+	font-weight: 500;
+}
+
+
+/* ********************All Page********************  */
+
+/* ********************Product Category********************  */
+.product-box {
+	padding: 50px 0;
+}
+
+.product-title {
+	margin-bottom: 50px;
+}
+
+.product-title h2 {
+	color: #010101;
+    font-size: 28px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.product-title p {
+	color: #010101;
+	font-size: 18px;
+    font-weight: 200;
+    margin: 0px;
+}
+
+.tz-product {
+	margin-top: 30px;
+}
+.tz-product .light-box {
+	/* border: 3px solid #d65106; */
+	display: inline-block;
+	/* margin-bottom: 30px; */
+}
+.tz-product .light-box img {
+	width: 100%;
+	transition: .2s ease-in-out;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.light-box:hover .img-product {
+	transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.light-box:hover .pro-name {
+	color: aqua;
+}
+
+.pro-box {
+	border: 1px solid #ccc;
+	padding: 15px 15px 15px 15px;
+	margin-top: 30px;
+}
+
+.pro-box h4 {
+	color: #000;
+	font-size: 18px;
+	/* font-family: ; */
+	font-weight: 500;
+	margin-top: 1rem;
+}
+.pro-box p {
+	color: red;
+	font-size: 16px;
+	bottom: 0;
+	margin-bottom: 0 !important;
+}
+
+.pro-box:hover ~ .img-product {
+	transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* ********************Product Category********************  */
+
+/* ********************Product Brand********************  */
+.pro-single {
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 0 10px #ccc;
+	border: 1px solid #fff;
+}
+.img-product-brand {
+	max-width: 100%;
+	height: auto;
+}
+.style-text {
+	position: absolute;
+	bottom: -100%;
+	height: 100%;
+	background: rgba(207, 166, 113, 0.8);
+    padding: 12px 12px;
+    -webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	left: 0;
+	right: 0;
+}
+.light-box:hover .style-text {
+	bottom: 0;
+}
+.style-text h4 {
+	color: #fff;
+}
+.style-text p {
+	color: #ffffff;
+    font-size: 13px;
+    border-bottom: 1px dashed #fff;
+    margin: 0px;
+    padding-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.style-text h5 {
+	color: #fff;
+}
+
+/* ********************Product Brand********************  */
+
